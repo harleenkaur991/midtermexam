@@ -26,9 +26,22 @@ public class Payroll
             emp=givenUser;
                  
         }
-      
+       public double getSalary() {
+        return Salary;
+    }
+
+    public void setSalary(double s) {
      
+    this.Salary=s;
     
     
-    
+}
+    public void setEmp(String em)
+    {
+        this.emp=em;
+    }
+public String getEmp()
+{
+    return emp;
+}
 }

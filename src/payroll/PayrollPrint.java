@@ -14,7 +14,7 @@ import java.util.Scanner;
 public class PayrollPrint 
 {
 public static void main(String[] args) 
-{
+{double salary;
 /* here assumed that 5 employee accounts can be created for the given bank */
 Payroll ac[]=new Payroll[5];
  //add code to take input from user, If salary is less than or equal to 3000,calculate a new salary with bonus 10% of salary
@@ -22,10 +22,14 @@ Payroll ac[]=new Payroll[5];
   
 Scanner sc=new Scanner(System.in);
 System.out.println("Please enter the employee name:");
- 
+ String name=sc.next();
 System.out.println("Please enter the salary: salary <=3000");
-     
-System.out.println("The final Salary including bonus is: ");         
+      salary=sc.nextDouble();
+     public void bonusPay()
+     {
+     double bonus=(10/100)*salary;
+     double finalSalary=salary+bonus;
+System.out.println("The final Salary including bonus is:"+finalSalary );         
 
 }
 
